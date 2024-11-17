@@ -15,7 +15,7 @@ export class AppComponent {
 
   calculateInvestmentResults(userInput: UserInput) {
     let investmentValue = userInput.initialInvestment;
-
+    this.annualData = [];
     for (let i = 0; i < userInput.duration; i++) {
       const year = i + 1;
       const interestEarnedInYear = investmentValue * (userInput.expectedReturn / 100);

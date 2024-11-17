@@ -12,10 +12,10 @@
     <tbody>
     <tr>
       <th>{{ data.year }}</th>
-      <th>{{ data.valueEndOfYear }}</th>
-      <th>{{ data.interest }}</th>
-      <th>{{ data.totalInterest }}</th>
-      <th>{{ data.annualInvestment }}</th>
+      <th>{{ data.valueEndOfYear | currency: 'INR' }}</th>
+      <th>{{ data.interest | currency: 'INR' }}</th>
+      <th>{{ data.totalInterest | currency: 'INR' }}</th>
+      <th>{{ data.annualInvestment | currency: 'INR' }}</th>
     </tr>
     </tbody>
   }
